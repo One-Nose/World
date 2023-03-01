@@ -1,3 +1,6 @@
 from src import World
 
-World()
+world: World = World()
+
+while True:
+    world.step()
