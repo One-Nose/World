@@ -1,17 +1,15 @@
 from datetime import timedelta
 
-from _object import Object
+from _interfaces import ObjectInterface, WorldInterface
 
 
-class World:
-    objects: list[Object]
-    time: timedelta
-
+class World(WorldInterface):
     def __init__(self) -> None:
         self.objects = []
         self.time = timedelta()
 
-    def register(self, obj: Object) -> None:
+    def register(self, obj: ObjectInterface) -> None:
+        obj.world = self
         self.objects.append(obj)
 
     def step(self) -> None:
