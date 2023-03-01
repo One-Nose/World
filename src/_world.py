@@ -13,3 +13,6 @@ class World:
 
     def register(self, obj: Object) -> None:
         self.objects.append(obj)
+
+    def step(self) -> None:
+        pass
