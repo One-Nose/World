@@ -1,6 +1,6 @@
 from datetime import timedelta
 
-from _interfaces import ObjectInterface, WorldInterface
+from ._interfaces import ObjectInterface, WorldInterface
 
 
 class World(WorldInterface):

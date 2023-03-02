@@ -1,4 +1,4 @@
-from _interfaces import BehaviorInterface, ObjectInterface
+from ._interfaces import BehaviorInterface, ObjectInterface
 
 
 class Object(ObjectInterface):

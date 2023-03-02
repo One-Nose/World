@@ -1,4 +1,4 @@
-from _interfaces import BehaviorInterface
+from ._interfaces import BehaviorInterface
 
 
 class Behavior(BehaviorInterface):
